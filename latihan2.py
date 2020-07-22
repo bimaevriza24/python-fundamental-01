@@ -51,3 +51,40 @@ while gunung > 5 : #
     print('sepuluh')
     gunung = gunung % 2 # (simbol persen % jika di pemprograman adalah sisa hasil dari pembagian/modulus)
                         #maka jika mengguanakan modulus, sisa hasil bagi yang menyentuh angka 5 yang dihitung
+
+
+#LIST (Array dalah kumpulan data yang ditempatkan dalam satu tempat) / DAFTAR
+
+    #BELAJAR TIPE DATA SKALAR (Tipe data sederhana)
+Nama_1 = 'haswin'
+Nama_2 = 'vendry'
+Nama_3 = 'wika'
+Nama_4 = 'yasa'
+Nama_5 = 'bima'
+print(f'Nama saya adalah :{Nama_1}') # fungsi f berguna untuk merubah varibel pada ke string
+
+#contoh jika tidak fungsi f
+print('Nama saya adalah : {Nama_1}')
+#jika tidak ada f akan terbaca character
+
+    #BELAJAR TIPE DATA LIST
+daftar_baju = [ #list selalu diawali kurung siku []
+    'kaos',
+    'celana',
+    'rok'
+]
+print(daftar_baju) #pada hasil ini menampilkan daftar baju sebelum ditambahi
+daftar_baju.append('topi') #append berguna untuk menambakan semua tipe data
+print(daftar_baju) #pada hasil ini menampilkan daftar baju setelah ditambahi
+print(daftar_baju[1]) # contoh memanggil data yang tersimpan di list melalui indexing
+# Tipe data list indexing dimulai dari 0
+
+# aku  punya baju : ...  celana
+print(f'aku punya baju : {daftar_baju[1]}')
+print(len(daftar_baju)) # len berguna menghitung jumlah data
+
+isi_dompet = 10,3,15,100,18,29,35
+print(len(isi_dompet))
+
+#aku pumya rok dan uang 3
+print(f'aku punya {daftar_baju[2]} dan uang {isi_dompet[2]}') #menggunakan kurung siku [] tidak harus didalam list, intinya untuk menggunakan kurung [] tidak harus didalam linkmemilih data indexing yang dipanggil

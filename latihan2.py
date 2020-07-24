@@ -88,3 +88,30 @@ print(len(isi_dompet))
 
 #aku pumya rok dan uang 3
 print(f'aku punya {daftar_baju[2]} dan uang {isi_dompet[2]}') #menggunakan kurung siku [] tidak harus didalam list, intinya untuk menggunakan kurung [] tidak harus didalam linkmemilih data indexing yang dipanggil
+
+#DICTIONARY adalah menghubungkan dua point antara KEY dan VALUE / KEYVALUEPAIR
+#contoh :
+
+kamus = {}
+kamus['anak'] = 'child'
+
+print({kamus['anak']})
+
+kamus['bumi'] = 'earth'
+kamus['api'] = 'fire'
+kamus['air'] = 'water'
+kamus['manusia'] = 'human'
+kamus['jalan'] = 'street'
+
+print({kamus['manusia']})
+
+gojek = {
+    'tanggal' : '24 july 2020' ,
+    'driver_list' : ['haswin','bima','vendry']
+}
+# per driver memiliki jarak sendiri sendiri
+
+print(f"nama: {gojek ['driver_list'][1] } tanggal : {gojek['tanggal']}")
+ #biasakan tipe data list atau dictionary mengguanakan petik dua (")
+
+

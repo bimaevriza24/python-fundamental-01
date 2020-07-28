@@ -114,4 +114,30 @@ gojek = {
 print(f"nama: {gojek ['driver_list'][1] } tanggal : {gojek['tanggal']}")
  #biasakan tipe data list atau dictionary mengguanakan petik dua (")
 
+"""
+Menghitung luas segita dengan fungsi ( alas x tinggi )
+"""
 
+a = 15
+t = 10
+luas_segita = a * t / 2
+
+print(f" alasnya = {a} tingginya = {t} luas segita = {luas_segita}")
+
+# alasnya = tingginya =  luas segitiga =
+
+alas = 20
+tinggi = 40
+def hitung_luas_segitiga (alas,tinggi): #define berguna untuk mendeklarasikan varibale fungsi dengan menambahkan ":"
+    luas_segita = alas * tinggi / 2
+    return luas_segita
+print(hitung_luas_segitiga(70,9))
+#indentasi (setiap titik dua ":" setelah itu dienter maka itu disebut indentasi
+print(f'menghitung alas dan tinggi {hitung_luas_segitiga(alas,tinggi)}')
+
+panjang = 12
+lebar   = 5
+def hitung_luas_persegi (panjang,lebar):
+    luas_persegi = panjang * lebar
+    return luas_persegi
+print(f'menghitung luas persegi = {hitung_luas_persegi(panjang,lebar)}')

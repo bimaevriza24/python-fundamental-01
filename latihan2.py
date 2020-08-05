@@ -109,10 +109,32 @@ gojek = {
     'tanggal' : '24 july 2020' ,
     'driver_list' : ['haswin','bima','vendry']
 }
+
+grab = {
+    'tanggal' : '30 juli 2020' ,
+    'driver_list' : ['haswin','bima','vendry'],
+    'jarak_tempuh' : ['20km','15km','30km'],
+
+    'drv' :
+        [
+          {'nama' : 'nama3', 'kilometer' : '20'}, # drv sebagai key, lalu terdapat dictionary di dalam list
+          {'nama' : 'nama2', 'kilometer' : '10'},
+          {'nama' : 'nama1', 'kilometer' : '30'}
+        ]
+
+}
+print(f"nama : {grab ['driver_list'][0]} tanggal : {grab['tanggal']} jarak hari ini : {grab['jarak_tempuh'][0]}")
+print(f"nama : {grab ['driver_list'][1]} tanggal : {grab['tanggal']} jarak hari ini : {grab['jarak_tempuh'][1]}")
+print(f"nama : {grab ['driver_list'][2]} tanggal : {grab['tanggal']} jarak hari ini : {grab['jarak_tempuh'][2]}")
+
+print(f"kilometer {grab ['drv'][0]}") #alur pemanggilannya sebagai berikut : jadi grab sebagai dictionary memanggil drv sebagai key atau kunci, lalu drv key memanggil nilai pertama yang ada didalam drv
+print(f"nama {grab['drv'][1] ['nama']}") #alur pemanggilan : grab sebagai dictionary, memanggil drv sebagai key atau kunci, lalu drv key memanggil data , setelah memanggil data pertama lalu memanggil nilai pada nama
+print(f"kilometer{grab['drv'][1] ['kilometer']}")
 # per driver memiliki jarak sendiri sendiri
 
 print(f"nama: {gojek ['driver_list'][1] } tanggal : {gojek['tanggal']}")
  #biasakan tipe data list atau dictionary mengguanakan petik dua (")
+
 
 """
 Menghitung luas segita dengan fungsi ( alas x tinggi )
